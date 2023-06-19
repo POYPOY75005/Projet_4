@@ -135,8 +135,17 @@
   color: blanchedalmond;
   }
 
+  .menu-container {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transform: translateY(-30px);
+    padding-top: 30px;
+    background-color: #f6f6f6;
+    
+  }
+
 .filter-section {
-  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .filtre-container {
@@ -146,6 +155,17 @@
   padding-right: 30px;
   padding-left: 15px;
 
+}
+
+.header-filter {
+  margin-bottom: 10px;
+}
+
+.header-filter span {
+  width: 40px;
+  height: 2px;
+  background-color: #99E2D0;
+  display: block;
 }
 
 .grid-item {
@@ -187,7 +207,6 @@
 footer {
   background-color: gray;
   color: blanchedalmond;
-  width: 100%;
   padding-left: 25px;
   
 }
@@ -237,7 +256,7 @@ footer ul li i {
   position: absolute;
   width: 0;
   height: 100%;
-  background-color: greenyellow;
+  background-color: #99E2D0;
   right: 0px;
   font-size: 0;
   transition: all 0.5s;
@@ -246,7 +265,36 @@ footer ul li i {
   align-items: center;
 }
 
+.checkmark i {
+  color: white;
+}
+
 .menu-item:hover .checkmark {
   width: 80px;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.price {
+  transition: all 0.5s;
+}
+
+.menu-item:hover .price {
+  transform: translateX(-80px);
+}
+
+.menu-item-header {
+  transition: all 0.5s;
+  width: 80%;
+}
+
+.menu-item-header h3,
+.menu-item-header p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s;
+}
+
+.menu-item:hover .menu-item-header {
+  width: 65%;
 }
