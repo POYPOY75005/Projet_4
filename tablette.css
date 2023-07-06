@@ -1,14 +1,16 @@
-@media screen and (min-width : 992 px) {
-    
 
-
-
-
-
-
-
-
-
+@media screen and (min-width: 768px) {
+.grid-restaurants {
+    grid-template-columns: 1fr 1fr;
+}
 
 }
 
+@media screen and (min-width: 992px) {
+    .filtre-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+}
