@@ -277,13 +277,13 @@ box-shadow: 0px 4px 15px 0px #00000059;
   height: 180px;
   display: block;
   object-fit: cover;
-  padding-right: 15px;
 }
 
 footer {
   background-color: #353535;
   color: white;
   padding: 15px;
+  height: 114px;
 }
 
 footer h5 {
@@ -311,6 +311,21 @@ footer ul li i {
   align-items: center;
   padding-left: 20px;
   gap: 30%;
+}
+
+.menuheader {
+  position: relative;
+  
+}
+
+.menuheader h5 {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 28px;
+  padding: 0 10px;
+}
+
+.menuheader .coeur-accueil {
+  right: 20px;
 }
 
 .menu-item {

@@ -1,16 +1,57 @@
-
 @media screen and (min-width: 768px) {
-.grid-restaurants {
+  .grid-restaurants {
     grid-template-columns: 1fr 1fr;
-}
-
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .filtre-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .header-restaurant {
+    gap: 45%;
+  }
 
-}
+  .menuheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
+  .menuheader .coeur-accueil {
+    position: initial;
+  }
+
+  .menuheader h5 {
+    text-align: center;
+  }
+
+  .menuheader .coeur-accueil {
+    right: 30%;
+  }
+
+  .main-content {
+    width: 70%;
+    margin: auto;
+    background-color: #f6f6f6;
+  }
+
+  .grid-img {
+    padding: 0;
+  }
+
+  .filtre-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+
+  footer ul {
+    display: flex;
+    gap: 25px;
+  }
 }
