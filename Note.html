@@ -11,6 +11,7 @@
     ></script>
     <title>OH MY FOOD</title>
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="tablette.css"/>
   </head>
 
   <body>
@@ -29,18 +30,21 @@
         
       </div>
 
+      <div class="main-content">
+      <div class="menu-container">
+
       <div class="menuheader">
         <h5>La note enchantée</h5>
         <div class="coeur-accueil">
           <i class="fa-regular fa-heart coeur-vide"></i>
+          <i class="fa-solid fa-heart coeur-plein"></i>
       </div>
       </div>
-      
-      <div class="menu-container">
-        <section class="filter-section">
-          <div class="header-filter">
-        <h2>ENTREES</h2>
+
+      <section class="filter-section entree">
         <div class="header-filter">
+        <h2>ENTREES</h2>
+       
           <span></span>
         </div>
         
@@ -80,7 +84,7 @@
           
           
                 <div class="menu-container">
-             <section class="filter-section">
+             <section class="filter-section plat">
           <h2>PLATS</h2>
           <div class="header-filter">
             <span></span>
@@ -113,7 +117,7 @@
                 </button>
              </section>
 
-             <section class="filter-section">
+             <section class="filter-section dessert">
               <h2>DESSERTS</h2>
               
               <div class="header-filter">
@@ -154,6 +158,7 @@
           <button type="submit" class="buttonsearch">Commander</button>
         </form>
       </section>
+      </div>
     </div>
     </main>
 
