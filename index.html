@@ -10,35 +10,39 @@
       crossorigin="anonymous"
     ></script>
     <title>OH MY FOOD</title>
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="tablette.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/tablette.css" />
   </head>
 
   <body>
+    <div class="loader">
+      <h2>Oh my food</h2>
+      <p>Chargement...</p>
+    </div>
     <header>
       <nav class="nav">
         <a href="#">
-          <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
+          <img src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
         </a>
       </nav>
-
-      <div class="Belleville">
-        <form class="research">
-          <span>
-            <i class="fa-solid fa-location-dot"></i>
-          </span>
-          <input type="text" value="Paris, Belleville" />
-        </form>
-      </div>
-
-      <section class="header_title">
-        <h1>Reservez le menu qui vous convient</h1>
-      </section>
-
-      <div class="soins">
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-      </div>
     </header>
+
+    <div class="Belleville">
+      <form class="research">
+        <span>
+          <i class="fa-solid fa-location-dot"></i>
+        </span>
+        <input type="text" value="Paris, Belleville" />
+      </form>
+    </div>
+
+    <section class="header_title">
+      <h1>Reservez le menu qui vous convient</h1>
+    </section>
+
+    <div class="soins">
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+    </div>
 
     <main>
       <div>
@@ -51,24 +55,24 @@
 
       <section class="filter-section">
         <h2>Fonctionnement</h2>
-        <div class="filtre-container">
-          <button type="submit" class="bouton_filtre">
+        <ul class="filtre-container">
+          <li class="bouton_filtre">
             <span class="pastille">1</span>
             <i class="fa-solid fa-mobile"></i>
             Choisissez un restaurant
-          </button>
-          <button type="submit" class="bouton_filtre">
+          </li>
+          <li class="bouton_filtre">
             <span class="pastille">2</span>
             <i class="fa-solid fa-list"></i>
             Composez votre Menu
-          </button>
-          <button type="submit" class="bouton_filtre">
+          </li>
+          <li class="bouton_filtre">
             <span class="pastille">3</span>
             <i class="fa-solid fa-shop"></i>
 
             Dégustez au restaurant
-          </button>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <div class="main-container">
@@ -76,56 +80,68 @@
           <h3>Restaurants</h3>
 
           <div class="grid-restaurants">
-            <a class="grid-item" id="palette" href="/Palette.html">
+            <a class="grid-item" id="palette" href="./pages/Palette.html">
               <img
-                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="La Palette"
                 class="grid-img"
               />
-              <div class="grid-item-content">
+              <article class="grid-item-content">
                 <h4>La palette du gout</h4>
                 <p>Ménilmontant</p>
                 <div class="coeur-accueil">
                   <i class="fa-regular fa-heart coeur-vide"></i>
                   <i class="fa-solid fa-heart coeur-plein"></i>
                 </div>
-              </div>
+              </article>
             </a>
 
-            <a class="grid-item" id="enchantée" href="/Note.html">
+            <a class="grid-item" id="enchantée" href="./pages/Note.html">
               <img
-                src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                 alt="La note enchantée"
                 class="grid-img"
               />
-              <div class="grid-item-content">
+              <article class="grid-item-content">
                 <h4>La note enchantée</h4>
                 <p>Charonne</p>
-              </div>
+                <div class="coeur-accueil">
+                  <i class="fa-regular fa-heart coeur-vide"></i>
+                  <i class="fa-solid fa-heart coeur-plein"></i>
+                </div>
+              </article>
             </a>
 
-            <a class="grid-item" id="française" href="Française.html">
+            <a class="grid-item" id="française" href="./pages/Française.html">
               <img
-                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt="A la française"
                 class="grid-img"
               />
-              <div class="grid-item-content">
+              <article class="grid-item-content">
                 <h4>A la française</h4>
                 <p>Cité rouge</p>
-              </div>
+                <div class="coeur-accueil">
+                  <i class="fa-regular fa-heart coeur-vide"></i>
+                  <i class="fa-solid fa-heart coeur-plein"></i>
+                </div>
+              </article>
             </a>
 
-            <a class="grid-item" id="note" href="Délice.html">
+            <a class="grid-item" id="note" href="./pages/Délice.html">
               <img
-                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                 alt="Le délice des sens"
                 class="grid-img"
               />
-              <div class="grid-item-content">
+              <article class="grid-item-content">
                 <h4>Le délice des sens</h4>
                 <p>Folie-Méricourt</p>
-              </div>
+                <div class="coeur-accueil">
+                  <i class="fa-regular fa-heart coeur-vide"></i>
+                  <i class="fa-solid fa-heart coeur-plein"></i>
+                </div>
+              </article>
             </a>
           </div>
         </section>
@@ -140,9 +156,5 @@
         <li>Contacts</li>
       </ul>
     </footer>
-    <div class="loader">
-      <h2>Oh my food</h2>
-      <p>Chargement...</p>
-    </div>
   </body>
 </html>
